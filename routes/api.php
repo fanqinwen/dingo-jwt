@@ -16,5 +16,5 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-//发送验证码
+//测试token
 Route::get('/test', 'TestController@index');
