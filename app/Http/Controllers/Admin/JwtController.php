@@ -1,14 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class JwtController extends Controller
 {
     public function index()
     {
-        echo '12345';
+        echo '123456';
     }
 }
