@@ -16,3 +16,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+//测试jwt
+Route::get('/test',"admin/JwtConroller@index");
+Route::get('api/users/{user}', function (App\User $user) {
+    return $user->email;
+});
